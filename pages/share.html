@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<link href="http://fonts.googleapis.com/css?family=Corben:bold" rel="stylesheet" type="text/css">
+<style>
+    h1,h2,h3,h4,h5,h6{
+        font-family: 'Corben', Georgia, Times, serif;
+    }
+    .share-wrapper{
+        text-align: center;
+        height: 100% !important;
+    }
+    a { }
+/* iPad */
+@media screen and (min-device-width : 768px) and (max-device-width : 1024px) {     
+    .fa-5x { 
+        font-size: 10em 
+    }
+}
+/* iPad Retina */
+@media screen and (min-device-width : 768px) and (max-device-width : 1024px)
+and (-webkit-min-device-pixel-ratio: 2) { 
+    .fa-5x { 
+        font-size: 10em; 
+    } 
+}
+[class^="fa-"].fa-spacer, [class*=" fa-"].fa-spacer {
+    padding: 10px;
+}
+
+#shareImageLandscape{
+    border: 1px solid;
+}
+/* overrides bootstrap align top */
+.table tbody>tr>td.table-vert-align-middle{
+    vertical-align: middle;
+}    
+/*    
+@media screen and (orientation: portrait){
+    .fa-5x { 
+        font-size: 5em; 
+    }
+}
+*/
+</style>
+<div id="ourShare">
+    <div class="share-wrapper">
+        <div id="getPhoto" class="center">
+            <a id="shareGetPhoto" class="">
+                <div id="spin-get-photo" class="fa-stack fa-5x">
+                    <span id="span-get-photo" class="fa fa-picture-o fa-stack-1x"></span>
+                </div>
+            </a>
+            <a id="shareTextOnly" class="">
+                <div class="fa-stack fa-5x">
+                    <i class="fa fa-picture-o fa-stack-1x"></i>
+                    <i class="fa fa-ban text-danger fa-stack-1x"></i>
+                </div>
+            </a>
+            <a id="shareTakePhoto" class="">
+                <div id="spin-take-photo" class="fa-stack fa-5x">
+                    <span class="fa fa-camera fa-stack-1x"></span>
+                </div>
+            </a>
+        </div>
+        <div id="shareImagePortaitDiv" class="">
+            <table class="table tabled-bordered portrait">
+                <tr>
+                    <td class="table-bordered">
+                        <a id="btn-whatsapp-portrait">
+                        <div class="fa-stack fa-2x">
+                            <i class="fa fa-whatsapp fa-stack-2x"></i>
+                        </div>
+                        </a>
+                    </td>
+                    <td rowspan="3" class="table-bordered">
+                        <img id="shareImagePortrait" class="img-responsive"/>
+                    </td>
+                    <td class="table-bordered">
+                        <a id="btn-email-portrait">
+                        <div class="fa-stack fa-2x">
+                            <i class="fa fa-at fa-stack-2x"></i>
+                            <i class="fa fa-stack-1x" style="color:white"></i>
+                        </div>
+                        </a>
+                    </td>
+                </tr>
+                <tr></tr>
+                <tr></tr>
+                <tr>
+                    <td class="table-bordered">
+                        <a id="btn-fb-portrait">
+                            <div class="fa-stack fa-2x">
+                                <i class="fa fa-facebook-square fa-stack-2x"></i>
+                                <i class="fa fa-stack-1x" style="color:white"></i>
+                            </div>
+                        </a>
+                    </td>
+                    <td class="table-bordered">
+                        <textarea id="shareMessagePortrait" rows="5" 
+                                  placeholder="Message Goes Here" class="pull-center" />
+                    </td>
+                    <td class="table-bordered">
+                        <a id="btn-twitter-portrait">
+                        <div class="fa-stack fa-2x">
+                            <i class="fa fa-twitter-square fa-stack-2x"></i>
+                            <i class="fa fa-stack-1x" style="color:white"></i>
+                        </div>
+                        </a>
+                </tr>
+            </table>
+            <table class="table tabled-bordered landscape">
+                <tr class="table-bordered">
+                    <td rowspan="3" class="table-bordered table-vert-align-middle">
+                        <img id="shareImageLandscape" class="img-responsive"/>
+                    </td>
+                    <td rowspan="3" class="table-bordered table-vert-align-middle">
+                        <textarea id="shareMessageLandscape" rows="6" 
+                                  placeholder="Message Goes Here" class="pull-center"/>
+                    </td>
+                    <td rowspan="3" class="table-bordered table-vert-align-middle">
+                        <table class="table tabled-bordered table-vert-align-middle">
+                            <tr rowspan="3">
+                                <td class="table-bordered">
+                                    <a id="btn-fb-landscape">
+                                    <div class="fa-stack fa-2x">
+                                        <i class="fa fa-facebook-square fa-stack-2x"></i>
+                                        <i class="fa fa-stack-1x" style="color:white"></i>
+                                    </div>
+                                    </a>
+                                </td>
+                                <td class="table-bordered">
+                                    <a id="btn-email-landscape">
+                                    <div class="fa-stack fa-2x">
+                                        <i class="fa fa-at fa-stack-2x"></i>
+                                        <i class="fa fa-stack-1x" style="color:white"></i>
+                                    </div>
+                                    </a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="table-bordered">
+                                    <a id="btn-twitter-landscape">
+                                    <div class="fa-stack fa-2x">
+                                        <i class="fa fa-twitter-square fa-stack-2x"></i>
+                                        <i class="fa fa-stack-1x" style="color:white"></i>
+                                    </div>
+                                    </a>
+                                </td>
+                                <td class="table-bordered">
+                                    <a id="btn-whatsapp-landscape">
+                                    <div class="fa-stack fa-2x">
+                                        <i class="fa fa-whatsapp fa-stack-2x"></i>
+                                    </div>
+                                    </a>
+                                </td>
+                            </tr>
+                        </table>
+                        </div>                            
+                    </td>
+                </tr>
+            </table>
+            <!--
+            <span class="col-xs-2 table-bordered">
+            <i class="fa fa-facebook-square fa-3x"></i>
+            <br/>
+            <i class="fa fa-wechat fa-3x"></i>
+            </span>
+            <img id="shareImagePortrait" class="col-xs-7 table-bordered"/>
+            <span class="col-xs-2 table-bordered">
+            <i class="pull-left fa fa-twitter-square fa-3x"></i>
+            <br/>
+            <i class="fa fa-at fa-3x"></i>
+            </span>
+            <div class="social-bar">
+            <textarea id="shareMessage" placeholder="Message Goes Here" class="pull-center"></textarea>
+            <br/>
+            <i class="fa fa-spacer fa-facebook-square fa-3x"></i>
+            <i class="fa fa-spacer fa-wechat fa-3x"></i>
+            <i class="fa fa-spacer fa-at fa-3x"></i>
+            <i class="fa fa-spacer fa-twitter-square fa-3x"></i>
+            </div>                
+            -->
+        </div>
+        <!--
+        <div id="shareImageLandscapeDiv" class="landscape">
+            <img id="shareImageLandscape" class="col-xs-4" />
+            <div class="social-bar col-xs-8">
+            <textarea id="shareMessage" placeholder="Message Goes Here"></textarea>
+            <br/>
+            <i class="fa fa-spacer fa-facebook-square fa-3x"></i>
+            <i class="fa fa-spacer fa-wechat fa-3x"></i>
+            <i class="fa fa-spacer fa-at fa-3x"></i>
+            <i class="fa fa-spacer fa-twitter-square fa-3x"></i>
+            </div>                
+        </div>
+        -->
+    </div>
+</div>
