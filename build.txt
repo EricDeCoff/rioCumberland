@@ -3,9 +3,9 @@ css/bootstrap.min.css
 ----------------
 css/bootstrap.min.css
 
-css/index.css
+css/home.css
 ----------------
-css/index.css
+css/home.css
 
 css/navbar-fixed-top.css
 ----------------
@@ -15,17 +15,25 @@ css/navbar-phone.css
 ----------------
 css/navbar-phone.css
 
-css/portrait_landscape.css
-----------------
-css/portrait_landscape.css
-
 css/screen.css
 ----------------
 css/screen.css
 
+css/social.css
+----------------
+css/social.css
+
 css/sticky-footer-navbar.css
 ----------------
 css/sticky-footer-navbar.css
+
+css/_index.css
+----------------
+css/_index.css
+
+css/_portrait_landscape.css
+----------------
+css/_portrait_landscape.css
 
 css/_screen.css
 ----------------
@@ -46,6 +54,10 @@ fonts/Holtwood_One_SC/HoltwoodOneSC.css
 spec/lib/jasmine-1.2.0/jasmine.css
 ----------------
 spec/lib/jasmine-1.2.0/jasmine.css
+
+style.min.3e7cb7d1.css
+----------------
+style.min.3e7cb7d1.css
 
 js/app.js
 ----------------
@@ -75,5 +87,11 @@ js/pages/about/ajaxAbout.js
 js/pages/about/about.js
 js/pages/staff/ajaxStaff.js
 js/pages/staff/staff.js
+js/pages/footer/footer.js
+js/pages/share/share.js
 js/utils/pushWooshHandler.js
+js/utils/socialSharingHandler.js
+js/rioBase64.js
+js/utils/mobileOrientation.js
+js/utils/mobileShare.js
 js/app.js
